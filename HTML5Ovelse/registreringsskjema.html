@@ -20,7 +20,56 @@
         <main>
             <section>
                 <h2>Registrering</h2>
-                
+                <form method="post">
+                    <label>
+                        Navn:
+                        <input type="text" name="navn" placeholder="Ola Nordmann" pattern="[A-Za-zæøåÆØÅ]{2,}"gse required>
+                    </label>
+                    <label>
+                        E-post:
+                        <input type="email" name="e-post" placeholder="Ola@mail.no" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+                    </label>
+                    <label>
+                        Passord:
+                        <input type="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                    </label>
+                    <label>
+                        Alder:
+                        <input type="number" min="18" max="99" required>
+                    </label>
+                    <label>
+                        Telefonnummer:
+                        <input type="tel" pattern="[0-9]{8,12}" required>
+                    </label>
+                    Kjønn:
+                    <label>
+                        Mann
+                        <input type="radio" name="valg" required>
+                    </label>
+                    <label>
+                        Kvinne
+                        <input type="radio" name="valg" required>
+                    </label>
+                    <label>
+                        Annet
+                        <input type="radio" name="valg" required>
+                    </label>
+                    <label>
+                        Land
+                        <select name="Land">
+                            <option value="Norge">Norge</option>
+                            <option value="Sverige">Sverige</option>
+                            <option value="Danmark">Danmark</option>
+                        </select>
+                    </label>
+                    <label>
+                        <a href="#">Personvern</a>
+                        <input type="checkbox" required>
+                    </label>
+                    <label>
+                        <input type="submit" value="send">
+                    </label>
+                </form>
             </section>
         </main>
         <footer>
