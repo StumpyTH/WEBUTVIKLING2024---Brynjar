@@ -1,4 +1,28 @@
-img{
-    width: 20%;
-    
+#logo{
+    max-width: 120px;
 }
+
+#topnav li {
+    display: inline;
+    width: 790px;
+    height: 60px;
+    font-size: 20px;
+    text-align: center;
+
+}
+ul {
+    position: -webkit-sticky; /*safari */ /*chrome */ /*opera */
+    top: 0;
+    width: 100%;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+    position: sticky;
+  }
+.active {
+    background-color: #04AA6D;
+  }
+
+  
+  li a {
+    color: #666;
+  }
