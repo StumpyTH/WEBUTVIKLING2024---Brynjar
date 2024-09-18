@@ -7,10 +7,10 @@
         <title>Zalando Light | Forside</title>
     </head>
     <body>
-        <header id="topnav">
-            <nav>
-                <ul>
-                    <li><a href="#"><img src="img/Zalandologo.webp" id="logo" alt="Nettsted logo"></a></li>
+        <header>
+            <img src="img/Zalandologo.png" id="main-logo" alt="Nettsted logo">
+            <nav class="flex-space-between">
+                <ul class="flex-menu">
                     <li><a href="#">Nordisk stil</a></li>
                     <li><a href="#">Nyheter</a></li>
                     <li><a href="#">Klær</a></li>
@@ -19,10 +19,10 @@
                     <li><a href="#">Streetwear</a></li>
                     <li><a href="#">Sport</a></li>
                     <li><a href="#">Designer</a></li>
-                    <li><a href="#">Outlet</a></li>
+                    <li><a href="#" id="Outlet">Outlet</a></li>
                 </ul>
                 <form>
-                    <label>Søk</label>
+                    <label for="search">Søk</label>
                     <input type="search" placeholder="Her kan du søke etter produkter.." id="search">
                     <input type="submit" value="søk">
                 </form>
