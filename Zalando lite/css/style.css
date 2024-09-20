@@ -1,5 +1,7 @@
 body{
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+
 }
 
 #main-logo{
@@ -7,6 +9,7 @@ body{
   max-width: 200px;
   margin: 0px auto;
   display: block;
+  padding: 10px;
 }
 
 img{
@@ -46,6 +49,8 @@ img{
 
 header{
   padding: 0px 24px;
+  background-color: darkgray;
+  background-size: 100%;
 }
 
 a{
@@ -55,4 +60,8 @@ a{
 
 #Outlet{
   color: crimson;
+}
+
+#search{
+  width: 230px;
 }
