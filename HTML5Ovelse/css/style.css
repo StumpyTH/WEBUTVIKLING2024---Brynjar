@@ -1,0 +1,168 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px 0px 0px auto;
+}
+
+header{
+    display: flex;
+    background-image: url(../img/colorful-sweets-with-copy-space_23-2148395023.jpg);
+    background-size: cover 100%;
+    width: 100% auto;
+    height: 140px;
+    margin: 0px auto;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 30px;
+    
+    h1{
+        margin: auto;
+        
+    }
+
+    h2{
+        margin: auto;
+        
+    }
+}
+
+.flex-menu-style{
+    box-shadow: 1px 1px 0px 0px #efefef;
+    border-radius: 4px;
+    padding: 1px 5px;
+}
+
+.flex-menu{
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    padding: 0;
+    margin: 2rem;
+    flex-wrap: wrap;
+    font-size: 16px;
+    width: 100%;
+    
+    a{
+        text-decoration: none;
+        color: black;
+        
+    }
+
+    a:visited{
+        color: blueviolet;
+    }
+
+    a:hover{
+        color: rgb(148, 148, 148);
+        text-decoration: underline;
+    }
+  }
+
+  .flex-menu-space{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+main{
+    display: inline-flex;
+    max-width: 70%;
+    min-width: 400px;
+    flex-basis: 70%;
+}
+
+.product-area{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 0.5rem 1rem;
+    h2{
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        margin-left: 20px;
+      }
+
+}
+
+.product-card {
+    border-radius: 25px;
+    max-width: 400px;
+    min-width: 300px;
+    width: auto;
+    height: auto;
+    box-shadow: 2px 2px 4px 2px #efefef;
+    padding: 0.5rem 3rem;
+    
+  }
+
+  aside{
+    display: inline-flex;
+    flex-direction: column;
+    max-width: 30%;
+    min-width: 350px;
+    background-color: rgb(213, 213, 213);
+    flex-basis: 30%;
+    padding: 1rem;
+    border-radius: 8px;
+    a{
+        text-decoration: none;
+        color: black;
+        
+    }
+
+    a:visited{
+        color: blueviolet;
+    }
+
+    a:hover{
+        color: rgb(148, 148, 148);
+        text-decoration: underline;
+    }
+
+}
+
+footer{
+    background-color: rgb(46, 46, 46);
+    color: white;
+    width: 100%;
+    margin: 0px;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+
+    a{
+        color: white;
+        text-decoration: none;
+    }
+
+    a:hover{
+        text-decoration: underline;
+        color: rgb(95, 95, 247);
+    }
+
+    h2{
+        margin: auto;
+    }
+}
+
+#hidden{
+    visibility: hidden;
+    position: absolute;
+}
+
+#alt-link{
+    a{
+        color: rgb(40, 160, 6);
+        text-decoration: none;
+    }
+
+    a:hover{
+        text-decoration: underline;
+        color: rgb(0, 122, 24);
+    }
+}

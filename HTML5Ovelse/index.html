@@ -3,31 +3,33 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, intital-scale 1.0">
-        <title>Workshop0209</title>
+        <link rel="stylesheet" href="css/style.css">
+        <title>Hjem</title>
     </head>
     <body>
         <header>
             <h1>Hovedside</h1>
         </header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Hjem</a></li>
-                <li><a href="Validering.html">Validering</a></li>
-                <li><a href="mal.html">Mal for undersider</a></li>
-                <li><a href="Kontakt.html">Kontakt oss</a></li>
+        <nav class="flex-menu-space">
+            <ul class="flex-menu">
+                <li class="flex-menu-style"><a href="index.html">Hjem</a></li>
+                <li class="flex-menu-style"><a href="Validering.html">Validering</a></li>
+                <li class="flex-menu-style"><a href="oppskrift.html">Lister: oppskrift</a></li>
+                <li class="flex-menu-style"><a href="mal.html">Mal for undersider</a></li>
+                <li class="flex-menu-style"><a href="Kontakt.html">Kontakt oss</a></li>
             </ul>
         </nav>
 
         <main>
-            <section>
-                <h2>Hoveddel</h2>
-                <article>
+            <section class="product-area">
+                <h2>artikler</h2>
+                <article class="product-card">
                     <h3>Validering</h3>
                 </article>
-                <article>
+                <article class="product-card">
                     <h3>Kontakt oss</h3>
                 </article>
-                <article>
+                <article class="product-card">
                     <h3>Studieplan</h3>
                 </article>
             </section>
@@ -47,10 +49,10 @@
                 </article>
             </section>
             <section>
-                <h3>Mer informasjon fra nett</h3>
+                <h3 id="hidden">Mer informasjon fra nett</h3>
                 <article>
-                    <h4>Google:</h4>
-                    <p>Her finner du resulater fra google om <a href="https://www.google.com/search?q=html5&rlz=1C1CHBF_noNO1123NO1123&oq=html5&gs_lcrp=EgZjaHJvbWUyCQgAEEUYORiABDIHCAEQABiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIGCAUQRRg9MgYIBhBFGDwyBggHEEUYPNIBCDE0ODhqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8">HTML5</a></p>
+                    <h4>Google resultater</h4>
+                    <p id="alt-link">Se hva google fant om <a href="https://www.google.com/search?q=html5&rlz=1C1CHBF_noNO1123NO1123&oq=html5&gs_lcrp=EgZjaHJvbWUyCQgAEEUYORiABDIHCAEQABiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIGCAUQRRg9MgYIBhBFGDwyBggHEEUYPNIBCDE0ODhqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8">HTML5</a></p>
                 </article>
             </section>
         </aside>

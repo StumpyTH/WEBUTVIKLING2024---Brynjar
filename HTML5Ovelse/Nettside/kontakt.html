@@ -3,18 +3,16 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, intital-scale=1.0">
-        <link rel="stylesheet" href="css/style.css">
-        <title>kontakt oss</title>
+        <title>Workshop0209</title>
     </head>
     <body>
         <header>
             <h1>Kontakt oss</h1>
         </header>
-        <nav class="main-nav">
-            <ul class="flex-menu">
+        <nav>
+            <ul>
                 <li><a href="index.html">Hjem</a></li>
                 <li><a href="Validering.html">Validering</a></li>
-                <li><a href="oppskrift.html">Lister: oppskrift</a></li>
                 <li><a href="mal.html">Mal for undersider</a></li>
                 <li><a href="Kontakt.html">Kontakt oss</a></li>
             </ul>
@@ -22,6 +20,16 @@
         <main>
             <section>
                 <h2>Kontaktskjema</h2>
+                <form method="post" action="">
+                    <label>
+                        E-post:
+                        <input type="email" name="email" placeholder="OlaNordmann@mail.no" maxlength="40" required>
+                    </label>
+                    <label>
+                        Melding:
+                        <textarea name="melding" wrap="hard" maxlength="400" cols="60" rows="8" required></textarea>
+                    </label>
+                </form>
             </section>
         </main>
         <footer>
