@@ -59,10 +59,17 @@ main{
         transform: rotate(-45deg) scale(1.2);
         background-image: url('../sprites/dead.png');
     }
+    90%{
+        bottom: -50px;
+        transform: rotate(-45deg) scale(1.2);
+        background-image: url('../sprites/dead.png');
+        opacity: 100%;
+    }
     100%{
         bottom: -50px;
         transform: rotate(-45deg) scale(1.2);
         background-image: url('../sprites/dead.png');
+        opacity: 0%;
     }
 }
 
@@ -75,7 +82,7 @@ main{
         bottom: 210px;
         left: 415px;
     }
-    50%{
+    15%{
         bottom: 250px;
         left: 415px;
         opacity: 100%;
