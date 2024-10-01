@@ -1,0 +1,177 @@
+main{
+    background-image: url('../sprites/bakgrunn.jpg');
+    background-size: contain;
+    height: 500px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+
+@keyframes runningMario {
+    from {background-image: url('../sprites/staa.png');}
+    to {background-image: url('../sprites/lopende.png');}
+}
+
+@keyframes movingMario {
+    0%{
+        left: 0;
+        bottom: 53px;
+    }
+
+    35%{
+        left: 410px;
+        bottom: 53px;
+    }
+    45%{
+        left: 410px;
+        bottom: 117px;
+    }
+    55%{
+        left: 410px;
+        bottom: 53px;
+    }
+    70%{
+        bottom: 53px;
+        left: 575px;
+    }
+    80%{
+        bottom: 200px;
+    }
+    100%{
+        bottom: 53px;
+        left: 800px;
+    }
+}
+
+
+@keyframes marioDies{
+    0%{
+        background-image: url('../sprites/dead.png');
+        bottom: 53px;
+        left: 800px;
+        transform: rotate(0deg);
+    }
+    50%{
+        bottom: 150px;
+        transform: rotate(-45deg) scale(1.2);
+        background-image: url('../sprites/dead.png');
+    }
+    100%{
+        bottom: -50px;
+        transform: rotate(-45deg) scale(1.2);
+        background-image: url('../sprites/dead.png');
+    }
+}
+
+@keyframes coinup {
+
+
+    0%{
+        visibility: visible;
+        opacity: 100%;
+        bottom: 210px;
+        left: 415px;
+    }
+    50%{
+        bottom: 250px;
+        left: 415px;
+        opacity: 100%;
+        
+    }
+    100%{
+        left: 415px;
+        bottom: 210px;
+        opacity: 0%;
+    }
+}
+
+@keyframes coinspin {
+    16.667%{
+        background-image: url('../sprites/front.png');
+    }
+    33%{
+        background-image: url('../sprites/right\ front.png');
+    }
+    50%{
+        background-image: url('../sprites/angled\ right.png');
+    }
+    67%{
+        background-image: url('../sprites/side.png');
+    }
+    83%{
+        background-image: url('../sprites/angled.png');
+    }
+    100%{
+        background-image: url('../sprites/left\ front.png');
+    }
+    
+}
+
+
+@keyframes runninggoomba {
+    from {
+        background-image: url('../sprites/sopp.png');
+        right: 0px;
+        bottom: 53px;
+    }
+    to{
+        background-image: url('../sprites/sopp-kopi.png');
+        right: 347px;
+    }
+}
+
+@keyframes movingGoomba{
+    from {right: 0px;}
+    to {right: 347px;}
+}
+
+#supermario{
+    /* background-image: url('../sprites/staa.png');*/
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    bottom: 53px;
+    animation-name: runningMario, movingMario, marioDies;
+    animation-iteration-count: infinite, 1, 1;
+    animation-duration: 0.25s, 3s, 2s;
+    animation-fill-mode: none, forwards, forwards;
+    animation-delay: 0s, 0s, 3s;
+    z-index: 1000;
+}
+
+#coin{
+    background-image: url('../sprites/coin.png');
+    background-size: cover;
+    background-position: center;
+    height: 45px;
+    width: 45px;
+    position: absolute;
+    animation-name: coinspin, coinup;
+    animation-iteration-count: infinite, 1;
+    animation-duration: 0.3s, 1s;
+    animation-delay: 0s, 1.2s;
+    animation-fill-mode: none, forwards;
+    animation-direction: normal;
+    bottom: 160px;
+    left: 410px;
+    visibility: hidden;
+    
+}
+
+#goomba{
+    background-image: url('../sprites/sopp.png');
+    background-size: contain;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    bottom: 53px;
+    right: 0;
+    animation-name: runninggoomba, movingGoomba;
+    animation-iteration-count: infinite, infinite;
+    animation-duration: 0.4s, 1s;
+    animation-direction: normal, alternate;
+}
