@@ -7,36 +7,36 @@
         <title>Zalando Light | Forside</title>
     </head>
     <body>
-        <header>
-            <img id="main-logo" src="img/Zalandologo.png" alt="Nettsted logo">
-            <nav class="flex-space-between">
-                <ul class="flex-menu">
-                    <li><a href="#">Nordisk stil</a></li>
-                    <li><a href="#">Nyheter</a></li>
-                    <li><a href="#">Klær</a></li>
-                    <li><a href="sko.html">Sko</a></li>
-                    <li><a href="#">Accessories</a></li>
-                    <li><a href="#">Streetwear</a></li>
-                    <li><a href="#">Sport</a></li>
-                    <li><a href="#">Designer</a></li>
-                    <li><a href="#" id="Outlet">Outlet</a></li>
-                </ul>
-                <form>
-                    <label for="search">Søk</label>
-                    <input type="search" placeholder="Her kan du søke etter produkter.." id="search">
-                    <input type="submit" value="søk">
-                </form>
-            </nav>
-        </header>
-        <main>
-            <nav>
-                <ul>
-                    <li><a href="#">Herre</a></li>
-                    <li>Sko</li>
-                </ul>
-            </nav>
-            <h1>Sko til herre</h1>
-            <aside>
+        <div id="grid-container">
+            <header id="global-header">
+                <img id="main-logo" src="img/Zalandologo.png" alt="Nettsted logo">
+                <nav class="flex-space-between">
+                    <ul class="flex-menu">
+                        <li><a href="#">Nordisk stil</a></li>
+                        <li><a href="#">Nyheter</a></li>
+                        <li><a href="#">Klær</a></li>
+                        <li><a href="sko.html">Sko</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Streetwear</a></li>
+                        <li><a href="#">Sport</a></li>
+                        <li><a href="#">Designer</a></li>
+                        <li><a href="#" id="Outlet">Outlet</a></li>
+                    </ul>
+                    <form>
+                        <label for="search">Søk</label>
+                        <input type="search" placeholder="Her kan du søke etter produkter.." id="search">
+                        <input type="submit" value="søk">
+                    </form>
+                </nav>
+            </header>
+            <aside id="category-menu">
+                <nav>
+                    <ul>
+                        <li><a href="#">Herre</a></li>
+                        <li>Sko</li>
+                    </ul>
+                </nav>
+                <h1>Sko til herre</h1>
                 <nav>
                     <ul>
                         <li>
@@ -51,79 +51,88 @@
                     </ul>
                 </nav>
             </aside>
-            <section>
-                <h2>Produkter</h2>
-                <form>
-                    <select name="brand">
-                        <option value="adidas">adidas</option>
-                        <option value="aldo">aldo</option>
-                        <option value="arkk">arkk</option>
-                        <option value="bianco">bianco</option>
-                    </select>
-                    <select name="sort">
-                        <option value="new">Nyeste</option>
-                        <option value="low">Lavest pris</option>
-                        <option value="high">Hoyest pris</option>
-                    </select>
-                </form>
+            <main>
+                <nav>
+                    <ul>
+                        <li><a href="#">Herre</a></li>
+                        <li>Sko</li>
+                    </ul>
+                </nav>
+                <h1>Sko til herre</h1>
                 <section>
-                    <article>
-                        <img src="img/Sko.webp" alt="Air Jordan green+cream accents">
-                        <a href="#">Air Jordan</a>
-                        <a href="#"><h3>AIR JORDAN 1 MID SE - Høye joggesko</h3></a>
-                        <p>1 895,00 kr</p>
-                    </article>
-                    <article>
-                        <img src="img/Sko.webp" alt="Air Jordan green+cream accents">
-                        <a href="#">Air Jordan</a>
-                        <a href="#"><h3>AIR JORDAN 1 MID SE - Høye joggesko</h3></a>
-                        <p>1 895,00 kr</p>
-                    </article>
-                    <article>
-                        <img src="img/Sko.webp" alt="Air Jordan green+cream accents">
-                        <a href="#">Air Jordan</a>
-                        <a href="#"><h3>AIR JORDAN 1 MID SE - Høye joggesko</h3></a>
-                        <p>1 895,00 kr</p>
-                    </article>
-                    <article>
-                        <img src="img/Sko.webp" alt="Air Jordan green+cream accents">
-                        <a href="#">Air Jordan</a>
-                        <a href="#"><h3>AIR JORDAN 1 MID SE - Høye joggesko</h3></a>
-                        <p>1 895,00 kr</p>
-                    </article>
-                    <article>
-                        <img src="img/Sko.webp" alt="Air Jordan green+cream accents">
-                        <a href="#">Air Jordan</a>
-                        <a href="#"><h3>AIR JORDAN 1 MID SE - Høye joggesko</h3></a>
-                        <p>1 895,00 kr</p>
-                    </article>
-                    <article>
-                        <img src="img/Sko.webp" alt="Air Jordan green+cream accents">
-                        <a href="#">Air Jordan</a>
-                        <a href="#"><h3>AIR JORDAN 1 MID SE - Høye joggesko</h3></a>
-                        <p>1 895,00 kr</p>
-                    </article>
-                    <article>
-                        <img src="img/Sko.webp" alt="Air Jordan green+cream accents">
-                        <a href="#">Air Jordan</a>
-                        <a href="#"><h3>AIR JORDAN 1 MID SE - Høye joggesko</h3></a>
-                        <p>1 895,00 kr</p>
-                    </article>
-                    <article>
-                        <img src="img/Sko.webp" alt="Air Jordan green+cream accents">
-                        <a href="#">Air Jordan</a>
-                        <a href="#"><h3>AIR JORDAN 1 MID SE - Høye joggesko</h3></a>
-                        <p>1 895,00 kr</p>
-                    </article>
-                    <article>
-                        <img src="img/Sko.webp" alt="Air Jordan green+cream accents">
-                        <a href="#">Air Jordan</a>
-                        <a href="#"><h3>AIR JORDAN 1 MID SE - Høye joggesko</h3></a>
-                        <p>1 895,00 kr</p>
-                    </article>
+                    <h2>Produkter</h2>
+                    <form>
+                        <select name="brand">
+                            <option value="adidas">adidas</option>
+                            <option value="aldo">aldo</option>
+                            <option value="arkk">arkk</option>
+                            <option value="bianco">bianco</option>
+                        </select>
+                        <select name="sort">
+                            <option value="new">Nyeste</option>
+                            <option value="low">Lavest pris</option>
+                            <option value="high">Hoyest pris</option>
+                        </select>
+                    </form>
+                    <section class="flex-space-between">
+                        <article class="product-card">
+                            <img src="img/Sko.webp" alt="Air Jordan green+cream accents">
+                            <a href="#">Air Jordan</a>
+                            <a href="#"><h3>AIR JORDAN 1 MID SE - Høye joggesko</h3></a>
+                            <p>1 895,00 kr</p>
+                        </article>
+                        <article class="product-card">
+                            <img src="img/Sko.webp" alt="Air Jordan green+cream accents">
+                            <a href="#">Air Jordan</a>
+                            <a href="#"><h3>AIR JORDAN 1 MID SE - Høye joggesko</h3></a>
+                            <p>1 895,00 kr</p>
+                        </article>
+                        <article class="product-card">
+                            <img src="img/Sko.webp" alt="Air Jordan green+cream accents">
+                            <a href="#">Air Jordan</a>
+                            <a href="#"><h3>AIR JORDAN 1 MID SE - Høye joggesko</h3></a>
+                            <p>1 895,00 kr</p>
+                        </article>
+                        <article class="product-card">
+                            <img src="img/Sko.webp" alt="Air Jordan green+cream accents">
+                            <a href="#">Air Jordan</a>
+                            <a href="#"><h3>AIR JORDAN 1 MID SE - Høye joggesko</h3></a>
+                            <p>1 895,00 kr</p>
+                        </article>
+                        <article class="product-card">
+                            <img src="img/Sko.webp" alt="Air Jordan green+cream accents">
+                            <a href="#">Air Jordan</a>
+                            <a href="#"><h3>AIR JORDAN 1 MID SE - Høye joggesko</h3></a>
+                            <p>1 895,00 kr</p>
+                        </article>
+                        <article class="product-card">
+                            <img src="img/Sko.webp" alt="Air Jordan green+cream accents">
+                            <a href="#">Air Jordan</a>
+                            <a href="#"><h3>AIR JORDAN 1 MID SE - Høye joggesko</h3></a>
+                            <p>1 895,00 kr</p>
+                        </article>
+                        <article class="product-card">
+                            <img src="img/Sko.webp" alt="Air Jordan green+cream accents">
+                            <a href="#">Air Jordan</a>
+                            <a href="#"><h3>AIR JORDAN 1 MID SE - Høye joggesko</h3></a>
+                            <p>1 895,00 kr</p>
+                        </article>
+                        <article class="product-card">
+                            <img src="img/Sko.webp" alt="Air Jordan green+cream accents">
+                            <a href="#">Air Jordan</a>
+                            <a href="#"><h3>AIR JORDAN 1 MID SE - Høye joggesko</h3></a>
+                            <p>1 895,00 kr</p>
+                        </article>
+                        <article class="product-card">
+                            <img src="img/Sko.webp" alt="Air Jordan green+cream accents">
+                            <a href="#">Air Jordan</a>
+                            <a href="#"><h3>AIR JORDAN 1 MID SE - Høye joggesko</h3></a>
+                            <p>1 895,00 kr</p>
+                        </article>
+                    </section>
                 </section>
-            </section>
-        </main>
-        <footer>Zalando Light 2024</footer>
+            </main>
+            <footer>Zalando Light 2024</footer>
+        </div>
     </body>
 </html>
