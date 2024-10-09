@@ -16,6 +16,7 @@ body{
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   grid-template-rows: repeat(3, auto);
+  row-gap: 2rem;
 }
 
 #main-logo{
@@ -68,11 +69,11 @@ img{
 }
 
 header{
-  padding: 0px 24px 10px;
+  padding: 10px 24px 18px;
   background-color: rgb(236, 236, 236);
   background-size: 100%;
   width: 100%;
-  margin: 10px 10px 10px;
+  margin: 0;
 }
 
 #global-header{
@@ -138,4 +139,50 @@ a{
   width: 100%;
   box-shadow: 13px 9px 20px 0px #efefef;
   padding: 1rem;
+}
+
+
+/*Desktop*/
+@media only screen and (min-width:800px) {
+  .fa-bars{
+    display: none;
+
+  }
+  #menu{
+    display: flex !important;
+  }
+  
+}
+
+/*Mobil*/
+@media only screen and (max-width:800px) {
+
+  #menu{
+    display: none;
+  }
+
+  #grid-container{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+  }
+
+  header, main aside footer{
+    grid-column: 1/2;
+  }
+
+  header{
+    grid-row: 1/2;
+  }
+  
+  main{
+    grid-row: 2/3;
+  }
+
+  aside{
+    display: none;
+  }
+  footer{
+    grid-row: 3/4;
+  }
+
 }
