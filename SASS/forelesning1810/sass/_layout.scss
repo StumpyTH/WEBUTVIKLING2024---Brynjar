@@ -1,4 +1,4 @@
-@mixin grid-placement($column, $row){
+@mixin grid-placment($column, $row){
     grid-column: #{$column};
     grid-row: #{$row};
 }
@@ -18,61 +18,53 @@
     margin: 0 auto;
 
     #global-header{
-        @include grid-placement("1/2", "1/2");
+        @include grid-placment("1/2", "1/2");
         @extend .flex-list;
+        align-items: center;
 
         ul{
             @extend .flex-list;
             list-style: none;
             gap: 1rem;
-            align-items: center
         }
-
     }
 
     nav{
-        @include grid-placement("1/2", "2/3");
+        @include grid-placment("1/2", "2/3");
     }
-
     main{
-        @include grid-placement("1/2", "3/4");
+        @include grid-placment("1/2", "3/4");
     }
-
     footer{
-        @include grid-placement("1/2", "4/5");
+        @include grid-placment("1/2","4/5" );
 
         ul{
             @extend .flex-list;
             list-style: none;
             justify-content: center;
-            gap: 2rem;
+            gap: 1rem;
 
             i{
-                font-size: 45px;
+                font-size: 20px;
             }
-
         }
     }
 }
 
 
-
 @media only screen and (min-width:800px){
-
     #main-grid{
         grid-template-columns: 0.5fr 2fr;
         grid-template-rows: repeat(3, auto);
 
         #global-header{
-            @include grid-placement("1/3", "1/2");
+            @include grid-placment("1/3", "1/2");
         }
         main{
-            @include grid-placement("2/3", "2/3");
+            @include grid-placment("2/3", "2/3");
         }
         footer{
-            @include grid-placement("1/3", "3/4");
+            @include grid-placment("1/3","3/4" )
         }
-
     }
-
 }
